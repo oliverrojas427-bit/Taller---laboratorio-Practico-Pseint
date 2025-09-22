@@ -42,7 +42,7 @@ Repetir
 	
 	Repetir
 		Escribir "-------------------------------------"
-		Escribir "        MEN⁄ DE PRODUCTOS"
+		Escribir "        MEN√ö DE PRODUCTOS"
 		Escribir "-------------------------------------"
 		Escribir "1. ", nombre1, " | Precio: $", precio1, " | Stock: ", stock1
 		Escribir "2. ", nombre2, " | Precio: $", precio2, " | Stock: ", stock2
@@ -59,7 +59,7 @@ Repetir
 				Escribir "Ingrese la cantidad que desea comprar de ", nombre1, ": "
 				Leer cantidad
 				Si cantidad > stock1 Entonces
-					Escribir " No puede comprar m·s de lo disponible en stock."
+					Escribir " No puede comprar m√°s de lo disponible en stock."
 				Sino
 					subtotal <- subtotal + (precio1 * cantidad)
 					stock1 <- stock1 - cantidad
@@ -69,7 +69,7 @@ Repetir
 				Escribir "Ingrese la cantidad que desea comprar de ", nombre2, ": "
 				Leer cantidad
 				Si cantidad > stock2 Entonces
-					Escribir " No puede comprar m·s de lo disponible en stock."
+					Escribir " No puede comprar m√°s de lo disponible en stock."
 				Sino
 					subtotal <- subtotal + (precio2 * cantidad)
 					stock2 <- stock2 - cantidad
@@ -79,7 +79,7 @@ Repetir
 				Escribir "Ingrese la cantidad que desea comprar de ", nombre3, ": "
 				Leer cantidad
 				Si cantidad > stock3 Entonces
-					Escribir " No puede comprar m·s de lo disponible en stock."
+					Escribir " No puede comprar m√°s de lo disponible en stock."
 				Sino
 					subtotal <- subtotal + (precio3 * cantidad)
 					stock3 <- stock3 - cantidad
@@ -89,7 +89,7 @@ Repetir
 				Escribir "Ingrese la cantidad que desea comprar de ", nombre4, ": "
 				Leer cantidad
 				Si cantidad > stock4 Entonces
-					Escribir " No puede comprar m·s de lo disponible en stock."
+					Escribir " No puede comprar m√°s de lo disponible en stock."
 				Sino
 					subtotal <- subtotal + (precio4 * cantidad)
 					stock4 <- stock4 - cantidad
@@ -98,7 +98,7 @@ Repetir
 		FinSegun
 	Hasta Que opcionn = 5
 	
-	// Si el usuario agregÛ algo al carrito
+	// Si el usuario agreg√≥ algo al carrito
 	Si subtotal > 0 Entonces
 		iva <- subtotal * 0.19
 		totalFinal <- subtotal + iva
@@ -109,8 +109,8 @@ Repetir
 		Escribir "Total con IVA: $", totalFinal
 		Escribir "-------------------------------------"
 		
-		// SelecciÛn de mÈtodo de pago
-		Escribir "Seleccione mÈtodo de pago:"
+		// Selecci√≥n de m√©todo de pago
+		Escribir "Seleccione m√©todo de pago:"
 		Escribir "1. Efectivo (10% descuento)"
 		Escribir "2. Tarjeta (5% descuento)"
 		Escribir "3. Transferencia (sin descuento)"
@@ -130,10 +130,10 @@ Repetir
 		Escribir "Monto final a pagar: $", totalFinal
 		Escribir "-------------------------------------"
 	SiNo
-		Escribir " No seleccionÛ productos en esta compra."
+		Escribir " No seleccion√≥ productos en esta compra."
 	FinSi
 	
-	Escribir "øDesea realizar otra compra? (Si/No): "
+	Escribir "¬øDesea realizar otra compra? (Si/No): "
 	Leer seguirCompra
 Hasta Que seguirCompra = "No" 
 
